@@ -28,11 +28,20 @@ class FlightAggregateTest {
     }
 
     @Test
-    public void the_aggregate_snapshot_deserializes_correctly() {
+    public void the_aggregate_snapshot_serializes_correctly() {
         // fixture.givenNoPriorActivity()
         //        .when(new FlightCreatedEvent(1L, now))
         //        .expectSnapshotToMatch(xml);
     }
+
+    @Test
+    public void the_aggregate_snapshot_deserializes_correctly() {
+        // fixture.givenSnapshot(snapshot)
+        //        .when(new FlightCreatedEvent(1L, now))
+        //        ...
+    }
+
+
 
     private static final String snapshot = "" +
             "// xml of snapshot";
