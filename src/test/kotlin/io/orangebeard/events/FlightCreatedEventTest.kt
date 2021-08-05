@@ -8,6 +8,7 @@ import java.time.LocalDateTime
 
 internal class FlightCreatedEventTest {
 
+    // should be the serializer used in production
     private val serializer = XStreamSerializer.builder().xStream(XStream()).build()
 
     @Test

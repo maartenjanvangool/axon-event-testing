@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test
 
 internal class FlightDelayedEventV1UpcasterTest {
 
-
+    // should be the serializer used in production
     private val serializer = XStreamSerializer.builder().xStream(XStream()).build()
 
     private val v1Upcaster = FlightDelayedEventV1Upcaster()
